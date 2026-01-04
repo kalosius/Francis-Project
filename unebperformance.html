@@ -66,10 +66,18 @@
       theme: {
           extend: {
               colors: {
-                  primary: '#069546', // Green
-                  secondary: '#fff000', // Yellow
-                  accent: '#ec1a23', // Red
-                  highlight: '#00acee', // Blue
+                  franciscan: {
+                      brown: '#6B4F3F',
+                      sand: '#EFE6D8',
+                      olive: '#7A8450',
+                      charcoal: '#2F2F2F',
+                      gold: '#C8A24D',
+                  },
+                  /* aliases for compatibility */
+                  primary: '#6B4F3F',
+                  secondary: '#EFE6D8',
+                  accent: '#7A8450',
+                  highlight: '#C8A24D',
               },
               fontFamily: {
                       sans: ['Inter', 'sans-serif'],
@@ -414,58 +422,58 @@
         <h2 class="text-md font-bold mb-8 text-primary text-center">UCE (S4) Performance</h2>
         
         <div class="bg-white rounded-2xl shadow overflow-hidden">
-            <div class="overflow-x-auto">
+            <div class="bg-franciscan-brown text-franciscan-sand">
                 <table class="w-full">
                     <thead class="bg-primary text-white">
                         <tr>
                             <th class="px-6 py-4 text-left">Year</th>
-                            <th class="px-6 py-4 text-left">1st Grade</th>
-                            <th class="px-6 py-4 text-left">2nd Grade</th>
-                            <th class="px-6 py-4 text-left">3rd Grade</th>
-                            <th class="px-6 py-4 text-left">4th Grade</th>
+                              <div class="bg-franciscan-brown p-2 rounded-full mr-2">
+                                  <i class="fas fa-map-marker-alt text-franciscan-sand"></i>
+                              </div>
+                              <span class="group-hover:text-franciscan-sand transition-colors">P.O Box 22551, Kampala-Uganda</span>
                             <th class="px-6 py-4 text-left">Total</th>
                             <th class="px-6 py-4 text-left">% of 1st Grade</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                                                        <tr class="hover:bg-gray-50 transition duration-300">
+                              <div class="bg-franciscan-brown p-2 rounded-full mr-2">
+                                  <i class="fas fa-phone text-franciscan-sand"></i>
+                              </div>
+                              <span class="group-hover:text-franciscan-sand transition-colors">0773115506 | 0705095494</span>
                                 <td class="px-6 py-4 font-medium">2023</td>
                                 <td class="px-6 py-4 font-medium text-primary">229</td>
-                                <td class="px-6 py-4">185</td>
-                                <td class="px-6 py-4">109</td>
-                                <td class="px-6 py-4">149</td>
-                                <td class="px-6 py-4 font-medium">825</td>
+                              <div class="bg-franciscan-brown p-2 rounded-full mr-2">
+                                  <i class="fas fa-envelope text-franciscan-sand"></i>
+                              </div>
+                              <span class="group-hover:text-franciscan-sand transition-colors">stfranciss@gmail.com</span>
                                 <td class="px-6 py-4 font-medium text-accent">27.76%</td>
                             </tr>
                                                         <tr class="hover:bg-gray-50 transition duration-300">
                                 <td class="px-6 py-4 font-medium">2024</td>
-                                <td class="px-6 py-4 font-medium text-primary">206</td>
+                              <a href="#" class="text-franciscan-sand hover:text-white transition-colors transform hover:scale-110">
                                 <td class="px-6 py-4">160</td>
                                 <td class="px-6 py-4">111</td>
-                                <td class="px-6 py-4">174</td>
+                              <a href="#" class="text-franciscan-sand hover:text-white transition-colors transform hover:scale-110">
                                 <td class="px-6 py-4 font-medium">793</td>
                                 <td class="px-6 py-4 font-medium text-accent">25.98%</td>
-                            </tr>
+                              <a href="#" class="text-franciscan-sand hover:text-white transition-colors transform hover:scale-110">
                                                 </tbody>
                 </table>
-            </div>
+                              <a href="#" class="text-franciscan-sand hover:text-white transition-colors transform hover:scale-110">
         </div>
 
-        <div class="mt-8 text-center">
+                              <a href="#" class="text-franciscan-sand hover:text-white transition-colors transform hover:scale-110">
             <p class="text-md text-gray-700">Our UCE performance has shown consistent improvement over the years, with a significant increase in first grade achievements.</p>
         </div>
     </section>
 
-    <!-- UACE (S6) Performance Section -->
-    <section>
+                      <div class="border-l border-franciscan-sand pl-6 hidden md:block">
+                          <a href="https://register-ylyd.onrender.com/admin/login/?next=/admin/" class="bg-franciscan-sand text-franciscan-brown px-4 py-2 rounded-lg font-semibold hover:bg-white transition-colors">
         <h2 class="text-md font-bold mb-8 text-primary text-center">UACE (S6) Performance</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                             <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
                 <div class="bg-primary text-white py-4 px-6">
-                    <h3 class="text-md font-bold">2023 Results</h3>
-                </div>
-                <div class="p-6">
+                      <a href="https://register-ylyd.onrender.com/" class="bg-franciscan-sand text-franciscan-brown px-4 py-2 rounded-lg font-semibold hover:bg-white transition-colors block md:hidden">
+                          Apply Now  →
+                      </a>
                     <ul class="space-y-2">
                                                         <li class="flex justify-between items-center">
                                 <span class="font-medium">20 Points</span>
