@@ -66,10 +66,18 @@
       theme: {
           extend: {
               colors: {
-                  primary: '#069546', // Green
-                  secondary: '#fff000', // Yellow
-                  accent: '#ec1a23', // Red
-                  highlight: '#00acee', // Blue
+                  franciscan: {
+                      brown: '#6B4F3F',
+                      sand: '#EFE6D8',
+                      olive: '#7A8450',
+                      charcoal: '#2F2F2F',
+                      gold: '#C8A24D',
+                  },
+                  /* aliases for compatibility */
+                  primary: '#6B4F3F',
+                  secondary: '#EFE6D8',
+                  accent: '#7A8450',
+                  highlight: '#C8A24D',
               },
               fontFamily: {
                       sans: ['Inter', 'sans-serif'],
@@ -242,56 +250,56 @@
 
   <body>
 
-    <div class="bg-primary text-white">
+    <div class="bg-franciscan-brown text-franciscan-sand">
       <div class="container mx-auto px-4">
           <div class="flex flex-col md:flex-row justify-between items-center py-3 text-sm">
               <div class="flex flex-wrap justify-center md:justify-start items-center space-x-6 md:space-x-8">
                   <div class="flex items-center group">
-                      <div class="bg-primary p-2 rounded-full mr-2">
-                          <i class="fas fa-map-marker-alt text-secondary"></i>
+                      <div class="bg-franciscan-brown p-2 rounded-full mr-2">
+                          <i class="fas fa-map-marker-alt text-franciscan-sand"></i>
                       </div>
-                      <span class="group-hover:text-secondary transition-colors">P.O Box 22551, Kampala-Uganda</span>
+                      <span class="group-hover:text-franciscan-sand transition-colors">P.O Box 22551, Kampala-Uganda</span>
                   </div>
                   <div class="flex items-center group">
-                      <div class="bg-primary p-2 rounded-full mr-2">
-                          <i class="fas fa-phone text-secondary"></i>
+                      <div class="bg-franciscan-brown p-2 rounded-full mr-2">
+                          <i class="fas fa-phone text-franciscan-sand"></i>
                       </div>
-                      <span class="group-hover:text-secondary transition-colors">0773115506 | 0705095494</span>
+                      <span class="group-hover:text-franciscan-sand transition-colors">0773115506 | 0705095494</span>
                   </div>
                   <div class="flex items-center group">
-                      <div class="bg-primary p-2 rounded-full mr-2">
-                          <i class="fas fa-envelope text-secondary"></i>
+                      <div class="bg-franciscan-brown p-2 rounded-full mr-2">
+                          <i class="fas fa-envelope text-franciscan-sand"></i>
                       </div>
-                      <span class="group-hover:text-secondary transition-colors">stfranciss@gmail.com</span>
+                      <span class="group-hover:text-franciscan-sand transition-colors">stfranciss@gmail.com</span>
                   </div>
               </div>
               <div class="flex items-center space-x-6 mt-3 md:mt-0">
                   <div class="flex space-x-4">
-                      <a href="#" class="text-secondary hover:text-white transition-colors transform hover:scale-110">
+                      <a href="#" class="text-franciscan-sand hover:text-white transition-colors transform hover:scale-110">
                           <i class="fab fa-facebook-f text-lg"></i>
                       </a>
-                      <a href="#" class="text-secondary hover:text-white transition-colors transform hover:scale-110">
+                      <a href="#" class="text-franciscan-sand hover:text-white transition-colors transform hover:scale-110">
                           <i class="fab fa-twitter text-lg"></i>
                       </a>
-                      <a href="#" class="text-secondary hover:text-white transition-colors transform hover:scale-110">
+                      <a href="#" class="text-franciscan-sand hover:text-white transition-colors transform hover:scale-110">
                           <i class="fab fa-instagram text-lg"></i>
                       </a>
-                      <a href="#" class="text-secondary hover:text-white transition-colors transform hover:scale-110">
+                      <a href="#" class="text-franciscan-sand hover:text-white transition-colors transform hover:scale-110">
                           <i class="fab fa-youtube text-lg"></i>
                       </a>
-                      <a href="#" class="text-secondary hover:text-white transition-colors transform hover:scale-110">
+                      <a href="#" class="text-franciscan-sand hover:text-white transition-colors transform hover:scale-110">
                           <i class="fab fa-linkedin-in text-lg"></i>
                       </a>
                   </div>
               <!-- For large screens (Staff Login) -->
-              <div class="border-l border-secondary pl-6 hidden md:block">
-                  <a href="https://register-ylyd.onrender.com/admin/login/?next=/admin/" class="bg-secondary text-primary px-4 py-2 rounded-lg font-semibold hover:bg-white transition-colors">
+              <div class="border-l border-franciscan-sand pl-6 hidden md:block">
+                  <a href="https://register-ylyd.onrender.com/admin/login/?next=/admin/" class="bg-franciscan-sand text-franciscan-brown px-4 py-2 rounded-lg font-semibold hover:bg-white transition-colors">
                       Staff Login
                   </a>
               </div>
   
               <!-- For small screens (Apply Now) -->
-              <a href="https://register-ylyd.onrender.com/" class="bg-secondary text-primary px-4 py-2 rounded-lg font-semibold hover:bg-white transition-colors block md:hidden">
+              <a href="https://register-ylyd.onrender.com/" class="bg-franciscan-sand text-franciscan-brown px-4 py-2 rounded-lg font-semibold hover:bg-white transition-colors block md:hidden">
                   Apply Now  →
               </a>
   
@@ -304,15 +312,15 @@
     <header class="bg-white shadow-md sticky top-0 z-50">
       <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
           <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-              <a href="index.html" class="flex items-center">
+                  <a href="index.html" class="flex items-center">
                   <img src="th.png" class="mr-3 h-12 sm:h-14" alt="School Logo">
                   <div>
-                      <span class="self-center text-sm font-semibold whitespace-nowrap text-primary">ST.Francis Senior Secondary School</span>
+                      <span class="self-center text-sm font-semibold whitespace-nowrap text-franciscan-brown">ST.Francis Senior Secondary School</span>
                       <p class="text-sm text-gray-600 italic">"Sapientia crucis</p>
                   </div>                
               </a>
               <div class="flex items-center lg:order-2">
-                  <a href="https://register-ylyd.onrender.com/" class="text-white bg-primary hover:bg-accent focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 focus:outline-none transition duration-300 hidden md:inline-block">
+                  <a href="https://register-ylyd.onrender.com/" class="text-franciscan-sand bg-franciscan-brown hover:bg-franciscan-olive focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 focus:outline-none transition duration-300 hidden md:inline-block">
                       Apply Now  →
                   </a>
                   <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mobile-menu-2" aria-expanded="false">
