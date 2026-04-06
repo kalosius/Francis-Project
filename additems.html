@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Category Management</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel='stylesheet' href='modern-ui.css'>
 </head>
-<body>
+<body class="inner-page admin-page">
 
     <!-- component -->
 <div class="bg-gray-100">
@@ -29,11 +30,11 @@
             <form class="w-full bg-white shadow-md p-6">
                 <div class="flex flex-wrap -mx-3 mb-6">
                     <div class="w-full md:w-full px-3 mb-6">
-                        <label class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" htmlFor="category_name">Category Name</label>
+                        <label class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="category_name">Category Name</label>
                         <input class="appearance-none block w-full bg-white text-gray-900 font-medium border border-gray-400 rounded-lg py-3 px-3 leading-tight focus:outline-none focus:border-franciscan-olive" type="text" name="name" placeholder="Category Name" required />
                     </div>
                     <div class="w-full px-3 mb-6">
-                        <textarea textarea rows="4" class="appearance-none block w-full bg-white text-gray-900 font-medium border border-gray-400 rounded-lg py-3 px-3 leading-tight focus:outline-none focus:border-[#98c01d]" type="text" name="description" required > </textarea>
+                        <textarea rows="4" class="appearance-none block w-full bg-white text-gray-900 font-medium border border-gray-400 rounded-lg py-3 px-3 leading-tight focus:outline-none focus:border-[#98c01d]" name="description" required></textarea>
                     </div>                        
                     
                     <div class="w-full md:w-full px-3 mb-6">
@@ -42,9 +43,9 @@
                     </div>
                     
                     <div class="w-full px-3 mb-8">
-                        <label class="mx-auto cursor-pointer flex w-full max-w-lg flex-col items-center justify-center rounded-xl border-2 border-dashed border-franciscan-olive bg-white p-6 text-center" htmlFor="dropzone-file">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-franciscan-brown" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                        <label class="mx-auto cursor-pointer flex w-full max-w-lg flex-col items-center justify-center rounded-xl border-2 border-dashed border-franciscan-olive bg-white p-6 text-center" for="dropzone-file">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-franciscan-brown" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
                         </svg>
 
                         <h2 class="mt-4 text-xl font-medium text-gray-700 tracking-wide">Category image</h2>
@@ -75,24 +76,26 @@
                                 <div class="font-semibold text-center">Action</div>
                             </th>
                         </tr>
+                    </thead>
+                    <tbody>
                         <tr>
                             <td>1</td>
-                            <td><img src="https://images.pexels.com/photos/25652584/pexels-photo-25652584/free-photo-of-elegant-man-wearing-navy-suit.jpeg?auto=compress&cs=tinysrgb&w=400" class="h-8 w-8 mx-auto" /></td>
+                            <td><img src="images/th.jpg" alt="Sample item" class="h-8 w-8 mx-auto" /></td>
                             <td>Sample Name</td>
                             <td>Sample Description</td>
                             <td class="p-2">
                                 <div class="flex justify-center">
                                 <a href="#" class="rounded-md hover:bg-franciscan-sand text-franciscan-brown p-2 flex justify-between items-center">
-                                    <span><FaEdit class="w-4 h-4 mr-1"/>
+                                    <span><i class="fas fa-edit w-4 h-4 mr-1"></i>
                                     </span> Edit
                                 </a>
                                 <button class="rounded-md hover:bg-franciscan-sand text-franciscan-olive p-2 flex justify-between items-center">
-                                    <span><FaTrash class="w-4 h-4 mr-1" /></span> Delete
+                                    <span><i class="fas fa-trash w-4 h-4 mr-1"></i></span> Delete
                                 </button>
                                 </div>
                             </td>
                         </tr>
-                    </thead>
+                    </tbody>
                 </table>
             </div>
         </div>
@@ -100,6 +103,84 @@
     </div>
     
 </div>
-    
+
+<!-- 
+     FOOTER
+ -->
+<footer>
+  <div class="footer-main text-white">
+    <div class="container mx-auto px-4 py-16">
+      <div class="grid md:grid-cols-4 gap-12">
+
+        <div>
+          <div class="flex items-center gap-3 mb-5">
+            <img src="images/th.jpg" alt="Logo" class="h-16 w-16 rounded-xl object-cover">
+            <div>
+              <div class="font-heading font-bold text-white text-sm">ST.Francis Senior</div>
+              <div class="font-heading font-bold text-white text-sm">Secondary School</div>
+              <div class="text-accent text-xs italic mt-0.5">Sapientia Crucis</div>
+            </div>
+          </div>
+          <p class="text-white/60 text-sm mb-6 leading-relaxed">Committed to providing quality education rooted in Christian values, fostering academic excellence and character development.</p>
+          <div class="flex space-x-3">
+            <a href="#" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-accent transition-colors flex items-center justify-center"><i class="fab fa-facebook-f text-sm"></i></a>
+            <a href="#" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-accent transition-colors flex items-center justify-center"><i class="fab fa-twitter text-sm"></i></a>
+            <a href="#" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-accent transition-colors flex items-center justify-center"><i class="fab fa-instagram text-sm"></i></a>
+            <a href="#" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-accent transition-colors flex items-center justify-center"><i class="fab fa-youtube text-sm"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-heading font-bold text-white text-lg mb-6">Quick Links</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#about" class="text-white/60 hover:text-accent transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-accent"></i>About Us</a></li>
+            <li><a href="#admissions" class="text-white/60 hover:text-accent transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-accent"></i>Admissions</a></li>
+            <li><a href="#academics" class="text-white/60 hover:text-accent transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-accent"></i>Academic Programs</a></li>
+            <li><a href="#student-life" class="text-white/60 hover:text-accent transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-accent"></i>Student Life</a></li>
+            <li><a href="#news" class="text-white/60 hover:text-accent transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-accent"></i>News &amp; Events</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-heading font-bold text-white text-lg mb-6">Contact Us</h4>
+          <ul class="space-y-4 text-sm">
+            <li class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-accent/15 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-map-marker-alt text-accent text-xs"></i></div>
+              <span class="text-white/60">P.O Box 123, Busunju, Uganda</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-accent/15 flex items-center justify-center flex-shrink-0"><i class="fas fa-phone text-accent text-xs"></i></div>
+              <span class="text-white/60">0393102946</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-accent/15 flex items-center justify-center flex-shrink-0"><i class="fas fa-envelope text-accent text-xs"></i></div>
+              <span class="text-white/60">stfrancis@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-heading font-bold text-white text-lg mb-4">Newsletter</h4>
+          <p class="text-white/60 text-sm mb-5 leading-relaxed">Subscribe to our newsletter for latest updates and news.</p>
+          <div class="space-y-3">
+            <input type="email" name="newsletterEmail" autocomplete="email" placeholder="Your email address" class="w-full px-4 py-3 rounded-xl bg-white border border-white/40 focus:outline-none focus:ring-2 focus:ring-[#C9A227]/40 focus:border-[#C9A227] text-[#2F2F2F] caret-[#2F2F2F] text-sm placeholder-gray-400 transition-colors pointer-events-auto">
+            <button class="w-full bg-[#C9A227] hover:bg-[#A88520] text-white px-4 py-3 rounded-xl font-semibold text-sm transition-all duration-300 hover:-translate-y-0.5 shadow-md hover:shadow-lg">Subscribe &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom text-white/50 text-xs">
+    <div class="container mx-auto px-4 py-5">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-2">
+        <p> 2025 ST.Francis Senior Secondary School Busunju. All rights reserved.</p>
+        <p>Designed by Sseviiri Akram | 0756589660 &nbsp;&nbsp; Developed by Aloisius Kasozi | 0704978132</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src='ui-enhancements.js' defer></script>
+  <script src="footer-year.js"></script>
 </body>
 </html>
